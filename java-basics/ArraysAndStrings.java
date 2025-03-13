@@ -1,17 +1,28 @@
-public class ArraysAndStrings {
+import java.util.Scanner;
+
+public class ArraysandStrings {
 
     public static void main(String[] args){
 
-            int[] numbers = {10, 20, 30, 40};
-    
-            for (int num : numbers) {
-                System.out.println(num);
-            }
+    Scanner sc = new Scanner(System.in);
 
-           String str = "Hello, World!";
-           System.out.println(str.toUpperCase()); 
-           System.out.println(str.substring(0, 5)); 
+    System.out.print("Enter the size of the array: ");
+    int n = sc.nextInt();
+    int[] a = new int[n];
 
+    System.out.print("Enter the elements of the array: ");
+    for(int i = 0; i < n; i++){
+        a[i] = sc.nextInt();
     }
+
+    System.out.println("The elements of the array are: ");
+    for(int num: a){
+        System.out.println(num);
+    }
+
+    String greeting = "Hello World";
+    System.out.println(greeting.toUpperCase());
     
+ }
 }
+
