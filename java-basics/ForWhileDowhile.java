@@ -14,6 +14,7 @@ public class ForWhileDowhile {
         }
 
         System.out.println(); 
+        
         int j=1;
         do{
             System.out.println(j);
